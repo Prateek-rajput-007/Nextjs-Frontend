@@ -118,7 +118,7 @@ export default function HeroSection() {
   return (
     <section className="relative w-full h-[882px] bg-[#FFC909] overflow-hidden">
       {/* Top Full-Width Image */}
-      <div className="absolute top-0 left-0 w-full h-[250px] z-0">
+      <div className="absolute top-[-5px] left-0 w-full h-[250px] z-0">
         <Image
           src="/bg.png"
           alt="Image 10"
@@ -129,7 +129,7 @@ export default function HeroSection() {
 
       {/* Heading */}
       <motion.h1
-        className="absolute top-[214px] left-[59px] w-[521px] text-[54px] font-semibold leading-[67.05px] tracking-tight text-center text-[#710A85] p-4 font-righteous z-10 flex flex-col items-start"
+        className="absolute top-[214px] left-[59px] w-[521px] text-[54px] font-semibold leading-[67.05px] tracking-tight text-center text-[#710A85] p-4 font-Candara z-10 flex flex-col items-start"
         style={{
           textShadow:
             "1px 1px 0 #FFFFFF, -1px -1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF",
