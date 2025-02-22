@@ -33,7 +33,9 @@ export default function GetInTouch() {
           />
         </div>
         {/* GET IN TOUCH Text */}
-        <h4 className="text-[#F39C12] text-lg font-bold tracking-wide mt-12">
+        <h4 className="text-[#F39C12] text-lg font-bold tracking-wide mt-12" style={{
+          fontFamily: "Righteous",
+        }}>
           GET IN TOUCH
         </h4>
 

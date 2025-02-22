@@ -1,5 +1,4 @@
 "use client";
-import { FaUser, FaBook, FaPen } from "react-icons/fa";
 import Image from "next/image";
 
 export default function GetStarted() {
@@ -21,7 +20,9 @@ export default function GetStarted() {
         {/* Heading */}
         <h2
           className="text-[36px] leading-[44.7px] tracking-[0.03em] text-center text-[#710A85] font-bold mb-12"
-          style={{ fontFamily: "Calibri" }}
+          style={{
+          fontFamily: "Righteous",
+        }}
         >
           Get Started
         </h2>
@@ -30,11 +31,9 @@ export default function GetStarted() {
         <div className="w-[1006px] h-[259px] flex justify-between items-center gap-[53px] mb-12">
           {/* Box 1 */}
           <div className="flex flex-col items-center w-1/3 h-full bg-[#F3E9F5] rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-300">
-            <div className="w-[80px] h-[80px] bg-white rounded-full flex items-center justify-center mb-4">
-              <FaUser size={40} color="#710A85" />
-            </div>
+            <Image src="/g1.png" alt="Choose an illustration" width={60} height={60} className="mb-4" />
             <h3 className="text-center text-[Poppins] text-[#710A85] text-[20px] font-semibold mb-2">
-            Choose an illustration
+              Choose an illustration
             </h3>
             <p className="text-center text-[Poppins] text-[#710A85] text-[16px] font-normal leading-[24px]">
               Start your creative journey by creating an account. Try free (1) story reading and writing!
@@ -42,12 +41,10 @@ export default function GetStarted() {
           </div>
 
           {/* Box 2 */}
-          <div className="flex flex-col items-center w-1/3 h-full bg-[#550964]/80 rounded-lg p-4 ">
-            <div className="w-[80px] h-[80px] bg-white rounded-full flex items-center justify-center mb-4">
-              <FaBook size={40} color="#710A85" />
-            </div>
+          <div className="flex flex-col items-center w-1/3 h-full bg-[#550964] rounded-lg p-4 ">
+            <Image src="/g2.png" alt="Write your story" width={60} height={60} className="mb-4" />
             <h3 className="text-center text-[Poppins] text-[20px] font-semibold mb-2 text-white">
-            Write your story
+              Write your story
             </h3>
             <p className="text-center text-[16px] text-[Poppins] font-normal leading-[24px] text-white">
               Dive into a world of creative stories and inspire your writing with our collection.
@@ -56,11 +53,9 @@ export default function GetStarted() {
 
           {/* Box 3 */}
           <div className="flex flex-col items-center w-1/3 h-full bg-[#F3E9F5] rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-300">
-            <div className="w-[80px] h-[80px] bg-white rounded-full flex items-center justify-center mb-4">
-              <FaPen size={40} color="#710A85" />
-            </div>
+            <Image src="/g3.png" alt="Publish your story" width={60} height={60} className="mb-4" />
             <h3 className="text-center text-[Poppins] text-[#710A85] text-[20px] font-semibold mb-2">
-            Publish your Story
+              Publish your Story
             </h3>
             <p className="text-center text-[Poppins] text-[#710A85] text-[16px] font-normal leading-[24px]">
               Begin crafting your own stories with our tools and share them with the community.

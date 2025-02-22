@@ -121,7 +121,7 @@ export default function More() {
         <h2 className="text-3xl font-righteous sm:text-4xl font-bold">
           More About Us
         </h2>
-        <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
+        <h2 className="text-3xl sm:text-5xl font-righteous md:text-6xl font-bold leading-tight">
           What we <br /> do!
         </h2>
         <p className="text-base sm:text-lg">
