@@ -108,7 +108,7 @@ export default function More() {
       {/* Left Section - Text Content */}
       <div className="w-full md:w-1/2 max-w-[587px] text-white space-y-6 z-10 relative">
         {/* New Images - Above Heading */}
-        <div className="absolute left-[-12rem] top-[-10rem] w-1/4 h-1/4 overflow-hidden z-40">
+        <div className="absolute left-[-12rem] top-[-5rem] w-1/4 h-1/4 overflow-hidden z-40">
           <Image src="/more-1.png" alt="Image 4" fill className="object-cover" />
         </div>
         <div className="absolute left-[35rem] top-[-5rem] w-1/5 h-1/5 overflow-hidden z-40">
