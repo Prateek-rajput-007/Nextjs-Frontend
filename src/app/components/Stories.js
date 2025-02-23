@@ -110,7 +110,7 @@ export default function ReadStories() {
           href="#"
           className="bg-[#710A85] text-white text-base font-semibold rounded-md px-[30px] py-[9px] border-4 border-[#9C29B2] shadow-md hover:bg-[#5A0670] hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-[#9C29B2] focus:ring-opacity-50 transition-all duration-300 z-10"
         >
-          Explore More
+          Explore more
         </Link>
       </motion.div>
     </section>

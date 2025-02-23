@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { HiLockClosed } from "react-icons/hi"; // Lock icon from react-icons/hi
-import { FaArrowDown } from "react-icons/fa"; // Down arrow from react-icons/fa
+import { FaAngleDown } from "react-icons/fa";
+
 
 export default function Navbar() {
   return (
@@ -46,7 +46,7 @@ export default function Navbar() {
         <div className="ml-16 space-x-6 flex items-center">
           <button className="border border-yellow-400 text-white px-6 py-2 rounded-md hover:bg-white hover:text-[#9C29B2] transition flex items-center justify-center">
             English
-            <FaArrowDown className="ml-2" size={16} />
+            <FaAngleDown className="ml-2" size={16} />
           </button>
           <button className="bg-yellow-400 text-[#363636] px-6 py-2 rounded-md hover:bg-yellow-400 transition flex items-center justify-center">
             Sign In
