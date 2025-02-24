@@ -87,7 +87,7 @@ export default function HeroSection() {
 
         {/* Join Now Button */}
         <motion.button
-          className="bg-[#710A85] text-white text-xs sm:text-sm font-semibold rounded-md px-[3vw] sm:px-[4vw] py-[1.5vw] sm:py-[2vw] border-2 sm:border-3 border-[#9C29B2] shadow-md hover:bg-[#5A0670] hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-[#9C29B2] focus:ring-opacity-50 transition-all duration-300 z-10 mt-6"
+          className="bg-[#710A85] text-white text-xs sm:text-sm font-semibold rounded-md px-5 sm:px-6 py-2 border-4 border-[#9C29B2] shadow-md hover:bg-[#5A0670] hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-[#9C29B2] focus:ring-opacity-50 transition-all duration-300"
           aria-label="Join Now"
           variants={scaleUp}
           initial="hidden"
@@ -191,7 +191,7 @@ export default function HeroSection() {
 
         {/* Join Now Button */}
         <motion.button
-          className="absolute top-[472px] left-[83px] w-[141px] bg-[#710A85] text-white text-base font-semibold rounded-md px-[30px] py-[9px] border-4 border-[#9C29B2] shadow-md hover:bg-[#5A0670] hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-[#9C29B2] focus:ring-opacity-50 transition-all duration-300 z-10"
+          className="absolute top-[472px] left-[83px] w-[141px] bg-[#710A85] text-white text-xs sm:text-sm font-semibold rounded-md px-5 sm:px-6 py-2 border-4 border-[#9C29B2] shadow-md hover:bg-[#5A0670] hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-[#9C29B2] focus:ring-opacity-50 transition-all duration-300"
           aria-label="Join Now"
           variants={scaleUp}
           initial="hidden"

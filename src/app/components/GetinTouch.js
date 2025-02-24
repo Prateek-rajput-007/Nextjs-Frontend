@@ -63,6 +63,63 @@
 //     </section>
 //   );
 // }
+
+// import Image from "next/image";
+// import Link from "next/link";
+
+// export default function GetInTouch() {
+//   return (
+//     <section className="w-full flex justify-center items-center py-20 sm:py-24 relative bg-white px-4 sm:px-8">
+//       {/* Rectangle Section with increased height */}
+//       <div
+//         className="relative w-full max-w-6xl min-h-[400px] sm:min-h-[400px] lg:min-h-[800px] bg-[#FFE7C0] flex flex-col items-center justify-center px-6 sm:px-12 py-16 sm:py-20"
+//         style={{
+//           clipPath: "path('M0 0 Q656 100 1312 0 L1312 800 L0 800 Z')",
+//         }}
+//       >
+//         {/* Top Left Image */}
+//         <div className="absolute top-4 left-4 w-12 h-12 sm:w-16 sm:h-16">
+//           <Image src="/star.png" alt="Top Left Decoration" fill className="object-contain" />
+//         </div>
+
+//         {/* Bottom Right Image */}
+//         <div className="absolute bottom-6 right-8 w-10 h-10 sm:w-16 sm:h-16">
+//           <Image src="/star.png" alt="Bottom Right Decoration" fill className="object-contain" />
+//         </div>
+
+//         {/* GET IN TOUCH Text */}
+//         <h4
+//           className="text-[#F39C12] text-sm sm:text-lg font-bold tracking-wide mt-8"
+//           style={{ fontFamily: "Righteous" }}
+//         >
+//           GET IN TOUCH
+//         </h4>
+
+//         {/* Needs Help? Let’s Get in Touch */}
+//         <h2 className="text-[#550964] font-righteous font-semibold text-2xl sm:text-3xl md:text-4xl leading-tight sm:leading-[52.15px] tracking-wide text-center mt-2">
+//           Need Help? Let&rsquo;s Get in Touch
+//         </h2>
+
+//         {/* Description Text */}
+//         <p className="text-[#550964] font-poppins text-sm sm:text-base leading-6 tracking-wide text-center max-w-lg mt-4 px-4 sm:px-0">
+//           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+//         </p>
+
+//         {/* Button */}
+//         <div className="mt-8">
+//           <Link
+//             href="#"
+//             className="bg-[#710A85] text-white text-sm sm:text-base font-semibold rounded-md px-6 sm:px-8 py-2 border-4 border-[#9C29B2] shadow-md hover:bg-[#5A0670] hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-[#9C29B2] focus:ring-opacity-50 transition-all duration-300"
+//           >
+//             Know more
+//           </Link>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
+
+
 "use client";
 
 import Image from "next/image";
