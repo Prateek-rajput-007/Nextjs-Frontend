@@ -83,6 +83,8 @@ export default function HeroSection() {
         >
           Helping young writers make cool stories with awesome pictures.
           Storybird's art-inspired writing makes learning fun!
+          <br/>
+          <br/>
         </motion.p>
 
         {/* Join Now Button */}
