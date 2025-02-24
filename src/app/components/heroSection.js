@@ -55,14 +55,12 @@ export default function HeroSection() {
           initial="hidden"
           animate="visible"
           transition={{ delay: 0.1 }}
-        >
-        </motion.div>
+        ></motion.div>
 
         {/* Heading */}
         <motion.h1
           className="text-[9vw] sm:text-[7vw] font-bold leading-tight text-center text-[#710A85] p-2 sm:p-3 font-righteous z-10 flex flex-col items-start"
           style={{
-            WebkitTextStroke: "1px white",
             color: "#710A85",
           }}
           variants={fadeInLeft}
@@ -83,8 +81,8 @@ export default function HeroSection() {
         >
           Helping young writers make cool stories with awesome pictures.
           Storybird's art-inspired writing makes learning fun!
-          <br/>
-          <br/>
+          <br />
+          <br />
         </motion.p>
 
         {/* Join Now Button */}
@@ -158,9 +156,9 @@ export default function HeroSection() {
           <Image
             src="/image5.png" // Replace with your small image path
             alt="Small Image"
-            width={50} 
-            height={50} 
-            className="absolute top-[190px] left-[59px] w-[50px] h-[50px]" 
+            width={50}
+            height={50}
+            className="absolute top-[190px] left-[59px] w-[50px] h-[50px]"
           />
         </motion.div>
 
@@ -265,16 +263,15 @@ export default function HeroSection() {
         </motion.div>
       </div>
 
-     {/* Bottom Curve */}
-<div className="absolute bottom-[-1px] left-0 w-full h-[120px] sm:h-[140px] md:h-[160px] lg:h-[180px] z-10">
-  <Image 
-    src="/curve.png" 
-    alt="Bottom Background" 
-    fill 
-    className="object-contain object-bottom"
-  />
-</div>
-
+      {/* Bottom Curve */}
+      <div className="absolute bottom-[-1px] left-0 w-full h-[120px] sm:h-[140px] md:h-[160px] lg:h-[180px] z-10">
+        <Image
+          src="/curve.png"
+          alt="Bottom Background"
+          fill
+          className="object-contain object-bottom"
+        />
+      </div>
     </section>
   );
 }
