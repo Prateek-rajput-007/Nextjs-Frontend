@@ -1,4 +1,5 @@
 
+
 "use client";
 import Image from "next/image";
 import Link from "next/link";
@@ -12,16 +13,16 @@ export default function More() {
       </div>
 
       {/* Left Section - Text Content */}
-      <div className="w-full md:w-1/2 max-w-[587px] text-white space-y-6 z-10 relative">
+      <div className="w-full md:w-1/2 max-w-[587px] text-white space-y-6 z-10 relative mt-20 md:mt-0">
         {/* New Images - Above Heading */}
         <div className="absolute left-[-12rem] top-[-5rem] w-1/4 h-1/4 overflow-hidden z-40">
-          <Image src="/more-1.png" alt="Image 4" fill className="object-cover" />
+          <Image src="/more-1.png" alt="Image 4" fill className="object-contain" />
         </div>
         <div className="absolute left-[35rem] top-[-5rem] w-1/5 h-1/5 overflow-hidden z-40">
-          <Image src="/more-2.png" alt="Image 4" fill className="object-cover" />
+          <Image src="/more-2.png" alt="Image 4" fill className="object-contain" />
         </div>
         <div className="absolute right-[-45rem] bottom-[2rem] w-1/4 h-1/4 overflow-hidden z-40">
-          <Image src="/more-1.png" alt="Image 5" fill className="object-cover" />
+          <Image src="/more-1.png" alt="Image 5" fill className="object-contain" />
         </div>
 
         <h2 className="text-3xl font-righteous sm:text-4xl font-bold">
@@ -44,20 +45,20 @@ export default function More() {
       </div>
 
       {/* Right Section - Image Stack */}
-      <div className="w-full md:w-1/2 max-w-[585px] h-[374px] relative mt-12 md:mt-0">
+      <div className="w-full md:w-1/2 max-w-[585px] h-[374px] relative mt-12 md:mt-0 flex flex-col items-center">
         {/* Third image (bottom layer) */}
-        <div className="absolute top-[-5rem] right-[-5rem] w-1/2 h-1/2 rounded-md overflow-hidden shadow-lg z-10">
-          <Image src="/image11.png" alt="Image 3" fill className="object-cover rounded-md" />
+        <div className="absolute top-[-5rem] right-[-5rem] w-1/2 h-auto rounded-md overflow-hidden shadow-lg z-10">
+          <Image src="/image11.png" alt="Image 3" width={300} height={200} className="object-contain w-full h-full" />
         </div>
 
         {/* Second image (middle layer) */}
-        <div className="absolute top-[1rem] right-[4rem] w-1/2 h-1/2 rounded-md overflow-hidden shadow-lg opacity-90 z-20">
-          <Image src="/image13.png" alt="Image 2" fill className="object-cover rounded-md" />
+        <div className="absolute top-[1rem] right-[4rem] w-1/2 h-auto rounded-md overflow-hidden shadow-lg opacity-90 z-20">
+          <Image src="/image13.png" alt="Image 2" width={300} height={200} className="object-contain w-full h-full" />
         </div>
 
         {/* First image (top layer) */}
-        <div className="absolute bottom-[5rem] left-[5rem] w-1/2 h-1/2 rounded-md overflow-hidden shadow-lg z-30">
-          <Image src="/image12.png" alt="Image 1" fill className="object-cover rounded-md" />
+        <div className="absolute bottom-[5rem] left-[5rem] w-1/2 h-auto rounded-md overflow-hidden shadow-lg z-30">
+          <Image src="/image12.png" alt="Image 1" width={300} height={200} className="object-contain w-full h-full" />
         </div>
       </div>
 
