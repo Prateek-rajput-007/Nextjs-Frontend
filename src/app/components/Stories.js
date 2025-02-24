@@ -1,3 +1,5 @@
+// 
+
 "use client";
 import Image from "next/image";
 import Link from "next/link";
@@ -22,15 +24,14 @@ export default function ReadStories() {
   };
 
   return (
-    <section className="w-full h-[1349px] bg-gradient-to-b from-white to-[#FFF0E5] py-12 px-8 flex flex-col items-center">
+    <section className="w-full bg-gradient-to-b from-white to-[#FFF0E5] py-12 px-4 sm:px-8 flex flex-col items-center">
       {/* Small Image at Top */}
       <motion.div
-        className="w-[66px] h-[43px] mb-6"
+        className="w-[50px] sm:w-[66px] h-auto mb-6"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: false }}
         variants={fadeInDown}
-        transition={{ duration: 0.5 }}
       >
         <Image src="/image 10.png" alt="Decorative" width={66} height={43} />
       </motion.div>
@@ -38,38 +39,36 @@ export default function ReadStories() {
       {/* Section Heading */}
       <div className="text-center">
         <motion.h2
-          className="text-[#9C29B2] font-righteous text-2xl tracking-wide"
+          className="text-[#9C29B2] font-righteous text-xl sm:text-2xl tracking-wide"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false }}
           variants={fadeInDown}
-          transition={{ duration: 0.5, delay: 0.2 }}
         >
           Read Stories
         </motion.h2>
         <motion.h3
-          className="text-[#2E0336] font-righteous font-semibold text-4xl leading-[44.7px] mt-2 text-center"
+          className="text-[#2E0336] font-righteous font-semibold text-2xl sm:text-4xl leading-tight sm:leading-[44.7px] mt-2"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false }}
           variants={fadeInDown}
-          transition={{ duration: 0.5, delay: 0.4 }}
         >
-          Take a look & Start Learning <br /> From Today
+          Take a look & Start Learning <br className="hidden sm:block" /> From Today
         </motion.h3>
       </div>
 
       {/* Grid Section - 8 Boxes */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-12">
         {Array.from({ length: 8 }).map((_, index) => (
           <motion.div
             key={index}
-            className="w-[305px] h-[401px] bg-[#710A85] border-4 border-yellow-400 rounded-[12px] p-6 flex flex-col text-white"
+            className="w-full max-w-[300px] bg-[#710A85] border-4 border-yellow-400 rounded-lg p-6 flex flex-col text-white"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: false }}
             variants={fadeInUp}
-            transition={{ duration: 0.8, delay: index * 0.1 }} // Staggered delay based on index
+            transition={{ duration: 0.8, delay: index * 0.1 }}
           >
             <div className="w-full h-[180px] mb-4">
               <Image
@@ -80,12 +79,11 @@ export default function ReadStories() {
                 className="rounded-lg"
               />
             </div>
-            <h4 className="text-xl font-semibold mb-2 text-left">
+            <h4 className="text-lg sm:text-xl font-semibold mb-2 text-left">
               Story Title {index + 1}
             </h4>
             <p className="text-sm mb-4 text-left">
-              Interactively brand client center through customized value good
-              ideas.
+              Interactively brand client center through customized value good ideas.
             </p>
             <Link
               href="#"
@@ -104,11 +102,10 @@ export default function ReadStories() {
         whileInView="visible"
         viewport={{ once: false }}
         variants={scaleUp}
-        transition={{ duration: 0.8, delay: 0.9 }} // Delay after boxes
       >
         <Link
           href="#"
-          className="bg-[#710A85] text-white text-base font-semibold rounded-md px-[30px] py-[9px] border-4 border-[#9C29B2] shadow-md hover:bg-[#5A0670] hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-[#9C29B2] focus:ring-opacity-50 transition-all duration-300 z-10"
+          className="bg-[#710A85] text-white text-base font-semibold rounded-md px-6 py-3 border-4 border-[#9C29B2] shadow-md hover:bg-[#5A0670] hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-[#9C29B2] focus:ring-opacity-50 transition-all duration-300"
         >
           Explore more
         </Link>
