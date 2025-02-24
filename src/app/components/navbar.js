@@ -51,7 +51,7 @@ export default function Navbar() {
           <button className="bg-yellow-400 text-[#363636] px-6 py-2 rounded-md hover:bg-yellow-400 transition flex items-center justify-center">
             Sign In
             <Image
-              src="/lock.png" // Replace with your actual image path
+              src="/lock.png" 
               alt="Lock Icon"
               width={20}
               height={20}

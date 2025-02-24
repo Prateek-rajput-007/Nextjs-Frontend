@@ -54,7 +54,7 @@ export default function HeroSection() {
         className="absolute top-[214px] left-[5%] md:left-[10%] lg:left-[59px] w-[90%] md:w-[521px] text-[8vw] md:text-[54px] font-bold leading-tight md:leading-[67.05px] tracking-tight text-center text-[#710A85] p-4 font- z-10 flex flex-col items-start"
         style={{
           WebkitTextStroke: "1px white", 
-          color: "#710A85", // Fill color
+          color: "#710A85", 
           fontFamily: "Righteous",
         }}
         variants={fadeInLeft}
